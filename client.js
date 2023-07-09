@@ -18,6 +18,23 @@ const connect = function() {
   //write name to the server upon connect
   conn.on("connect", () => {
     conn.write("Name: RAM");
+
+    // setTimeout(() => {
+    //   conn.write("Move: up");
+    // }, 500);
+
+    // setTimeout(() => {
+    //   conn.write("Move: down");
+    // }, 1000);
+
+    // setTimeout(() => {
+    //   conn.write("Move: left");
+    // }, 1500);
+
+    // setTimeout(() => {
+    //   conn.write("Move: left");
+    // }, 2000);
+
   });
 
   // Event listener for incoming data
