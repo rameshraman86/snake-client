@@ -23,9 +23,11 @@ const handleUserInput = (key) => {
 
   if (key === 'w') {
     conn.write("Move: up");
+    conn.write("Say: 'gobble gobble gobble!!!!")
   }
   if (key === 'a') {
     conn.write("Move: left");
+    conn.write("Say: 'LEFT!!!")
   }
   if (key === 's') {
     conn.write("Move: down");
@@ -33,6 +35,7 @@ const handleUserInput = (key) => {
   if (key === 'd') {
     conn.write("Move: right");
   }
+
 
 };
 
